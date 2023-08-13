@@ -1,109 +1,118 @@
 import React from 'react';
 import './App.css';
 import styled from "styled-components";
-import {ItemsImage} from "./img/Image.styled";
+import {CardItemsImage} from "./img/Image.styled";
 import Rectangle from "./Rectangle1.svg"
+import {CardStyled, CardItems} from './components/Card.styled';
+import {CardItemsTitleStyled} from "./components/CardItemsTitle.styled";
+import {CardItemsTextStyled} from "./components/CardItemsText.styled";
+import {CardItemsBtn, CardItemsWrapperBtn} from "./components/CardButton.styled";
 
 function App() {
     return (<Wrapper>
-            <Card>
+            <CardStyled>
                 Card
-                <Items>
-                    <ItemsImage>
+                <CardItems theme={"dark"}>
+                    <CardItemsImage>
                         <img alt='#' src={Rectangle}/>
-                    </ItemsImage>
-                    <ItemsTitle>Headline</ItemsTitle>
-                    <ItemsText>
+                    </CardItemsImage>
+                    <CardItemsTitleStyled theme={"dark"}>Headline</CardItemsTitleStyled>
+                    <CardItemsTextStyled>
                         Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut.
                         Sit molestie ornare in venen.
-                    </ItemsText>
-                    <ItemsWrapperBtn>
-                        <ItemsBtn>See more</ItemsBtn>
-                        <ItemsBtn>Save</ItemsBtn>
-                    </ItemsWrapperBtn>
-                </Items>
-            </Card>
-            <Card>
+                    </CardItemsTextStyled>
+                    <CardItemsWrapperBtn>
+                        <CardItemsBtn btnType={"outlined"}>See more</CardItemsBtn>
+                        <CardItemsBtn btnType={"outlined"}>Save</CardItemsBtn>
+                    </CardItemsWrapperBtn>
+                </CardItems>
+            </CardStyled>
+            <CardStyled>
                 Card
-                <Items>
-                    <ItemsImage>
+                <CardItems theme={"light"}>
+                    <CardItemsImage>
                         <img alt='#' src={Rectangle}/>
-                    </ItemsImage>
-                    <ItemsTitle>Headline</ItemsTitle>
-                    <ItemsText>
+                    </CardItemsImage>
+                    <CardItemsTitleStyled theme={"light"}>Headline</CardItemsTitleStyled>
+                    <CardItemsTextStyled>
                         Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut.
                         Sit molestie ornare in venen.
-                    </ItemsText>
-                    <ItemsWrapperBtn>
-                        <ItemsBtn>See more</ItemsBtn>
-                        <ItemsBtn>Save</ItemsBtn>
-                    </ItemsWrapperBtn>
-                </Items>
-            </Card> <Card>
-            Card
-            <Items>
-                <ItemsImage>
-                    <img alt='#' src={Rectangle}/>
-                </ItemsImage>
-                <ItemsTitle>Headline</ItemsTitle>
-                <ItemsText>
-                    Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut.
-                    Sit molestie ornare in venen.
-                </ItemsText>
-                <ItemsWrapperBtn>
-                    <ItemsBtn>See more</ItemsBtn>
-                    <ItemsBtn>Save</ItemsBtn>
-                </ItemsWrapperBtn>
-            </Items>
-        </Card> <Card>
-            Card
-            <Items>
-                <ItemsImage>
-                    <img alt='#' src={Rectangle}/>
-                </ItemsImage>
-                <ItemsTitle>Headline</ItemsTitle>
-                <ItemsText>
-                    Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut.
-                    Sit molestie ornare in venen.
-                </ItemsText>
-                <ItemsWrapperBtn>
-                    <ItemsBtn>See more</ItemsBtn>
-                    <ItemsBtn>Save</ItemsBtn>
-                </ItemsWrapperBtn>
-            </Items>
-        </Card> <Card>
-            Card
-            <Items>
-                <ItemsImage>
-                    <img alt='#' src={Rectangle}/>
-                </ItemsImage>
-                <ItemsTitle>Headline</ItemsTitle>
-                <ItemsText>
-                    Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut.
-                    Sit molestie ornare in venen.
-                </ItemsText>
-                <ItemsWrapperBtn>
-                    <ItemsBtn>See more</ItemsBtn>
-                    <ItemsBtn>Save</ItemsBtn>
-                </ItemsWrapperBtn>
-            </Items>
-        </Card> <Card>
-            Card
-            <Items>
-                <ItemsImage>
-                    <img alt='#' src={Rectangle}/>
-                </ItemsImage>
-                <ItemsTitle>Headline</ItemsTitle>
-                <ItemsText>
-                    Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut.
-                    Sit molestie ornare in venen.
-                </ItemsText>
-                <ItemsWrapperBtn>
-                    <ItemsBtn>See more</ItemsBtn>
-                    <ItemsBtn>Save</ItemsBtn>
-                </ItemsWrapperBtn>
-            </Items>
-        </Card>
+                    </CardItemsTextStyled>
+                    <CardItemsWrapperBtn>
+                        <CardItemsBtn btnType={"primary"}>See more</CardItemsBtn>
+                        <CardItemsBtn btnType={"outlined"}>Save</CardItemsBtn>
+                    </CardItemsWrapperBtn>
+                </CardItems>
+            </CardStyled>
+            <CardStyled>
+                Card
+                <CardItems theme={"dark"}>
+                    <CardItemsImage>
+                        <img alt='#' src={Rectangle}/>
+                    </CardItemsImage>
+                    <CardItemsTitleStyled theme={"dark"}>Headline</CardItemsTitleStyled>
+                    <CardItemsTextStyled>
+                        Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut.
+                        Sit molestie ornare in venen.
+                    </CardItemsTextStyled>
+                    <CardItemsWrapperBtn>
+                        <CardItemsBtn btnType={"outlined"} color={'purple'}>See more</CardItemsBtn>
+                        <CardItemsBtn btnType={"primary"} color={'purple'}>Save</CardItemsBtn>
+                    </CardItemsWrapperBtn>
+                </CardItems>
+            </CardStyled>
+            <CardStyled>
+                Card
+                <CardItems theme={"light"}>
+                    <CardItemsImage>
+                        <img alt='#' src={Rectangle}/>
+                    </CardItemsImage>
+                    <CardItemsTitleStyled theme={"light"}>Headline</CardItemsTitleStyled>
+                    <CardItemsTextStyled>
+                        Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut.
+                        Sit molestie ornare in venen.
+                    </CardItemsTextStyled>
+                    <CardItemsWrapperBtn>
+                        <CardItemsBtn btnType={"primary"} color={'green'}>See more</CardItemsBtn>
+                        <CardItemsBtn btnType={"outlined"} color={'green'}>Save</CardItemsBtn>
+                    </CardItemsWrapperBtn>
+                </CardItems>
+            </CardStyled>
+            <CardStyled>
+                Card
+                <CardItems theme={"dark"}>
+                    <CardItemsImage>
+                        <img alt='#' src={Rectangle}/>
+                    </CardItemsImage>
+                    <CardItemsTitleStyled theme={"dark"}>Headline</CardItemsTitleStyled>
+                    <CardItemsTextStyled>
+                        Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut.
+                        Sit molestie ornare in venen.
+                    </CardItemsTextStyled>
+                    <CardItemsWrapperBtn>
+                        <CardItemsBtn btnType={"primary"} color={'orange'}>See more</CardItemsBtn>
+                        <CardItemsBtn btnType={"outlined"} color={'orange'}>Save</CardItemsBtn>
+                    </CardItemsWrapperBtn>
+                </CardItems>
+            </CardStyled>
+            <CardStyled>
+                Card
+                <CardItems theme={"light"}>
+                    <CardItemsImage>
+                        <img alt='#' src={Rectangle}/>
+                    </CardItemsImage>
+                    <CardItemsTitleStyled theme={"light"}>Headline</CardItemsTitleStyled>
+                    <CardItemsTextStyled>
+                        Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut.
+                        Sit molestie ornare in venen.
+                    </CardItemsTextStyled>
+                    <CardItemsWrapperBtn>
+                        <CardItemsBtn btnType={"outlined"} color={'red'}>See more</CardItemsBtn>
+                        <CardItemsBtn btnType={"primary"} color={'red'}>Save</CardItemsBtn>
+                    </CardItemsWrapperBtn>
+                </CardItems>
+            </CardStyled>
+
         </Wrapper>
     )
 }
@@ -115,58 +124,4 @@ const Wrapper = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
   padding: 30px 15% 0;
-`
-const Card = styled.div`
-  color: #ABB3BA;
-  font-size: 12px;
-`
-
-const Items = styled.div`
-  display: grid;
-  grid-template-rows: auto 1fr 1fr 1fr;
-  border-radius: 15px;
-  background: #FFF;
-  box-shadow: 0 4px 20px 5px rgba(0, 0, 0, 0.10);
-`
-const ItemsTitle = styled.h1`
-  color: #000;
-  font-family: ${'Inter'};
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  padding-left: 20px;
-  padding-top: 15px;
-`
-const ItemsText = styled.p`
-  max-width: 260px;
-  display: block;
-  color: #ABB3BA;
-  font-family: ${'Inter'};
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 20px;
-  padding-left: 20px;
-`
-const ItemsWrapperBtn = styled.div`
-  display: grid;
-  grid-template-columns: 90px 90px;
-  column-gap: 12px;
-  align-items: center;
-  padding-left: 20px;
-`
-
-const ItemsBtn = styled.button`
-  border: 0;
-  width: 86px;
-  height: 30px;
-  border-radius: 5px;
-  background: #4E71FE;
-  color: #FFF;
-  font-family: ${'Inter'};
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 20px;
 `
